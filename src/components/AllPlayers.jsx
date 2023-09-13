@@ -9,7 +9,7 @@ const AllPlayers = () => {
     useEffect(() => {
         async function fetchAllPLayers () {
             const {data} = await axios.get('https://fsa-puppy-bowl.herokuapp.com/api/2307-ftb-et-web-ft/players');
-            console.log(data.data.players)
+            console.log(data.data.players);
             setPlayers(data.data.players);
         }
         fetchAllPLayers() ;
